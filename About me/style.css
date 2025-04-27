@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+body {
+    padding: 20px;
+    color: aliceblue;
+    background: #042554;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+.name_vorname {
+    display: flex;
+    padding: 40px 0;
+    align-items: center;
+    gap: 50px;
+
+}
+
+.name_vorname p {
+    font-size: 18px;
+}
+
+ul {
+    padding: 30px 0;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.ul_first {
+    justify-content: center;
+    flex-direction: column;
+}
+
+li {
+    all: unset;
+}
+
+.li_first {
+    display: block;
+    /* text-align: center; */
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.li_second {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.ul_second {
+    gap: 300px;
+    /* padding: 30px; */
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+a {
+    all: unset;
+    padding: 20px 0;
+    width: 100%;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #042554;
+    transition: .3s ease-in-out;
+}
+
+button:hover {
+    opacity: 0.8;
+}
