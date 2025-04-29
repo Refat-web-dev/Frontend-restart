@@ -11,8 +11,12 @@ a {
     cursor: pointer;
 }
 
+.playfair_display {
+    font-family: "Playfair Display", serif;
+}
+
 body {
-    padding: 20px 0 0;
+    padding: 40px 0 ;
     background-color: #000;
     font-family: "Inter", sans-serif;
     overflow-x: hidden;
@@ -89,14 +93,12 @@ header {
 }
 
 .pic_left {
-    /* height: 500px; */
     left: -100px;
     bottom: 0;
     background-image: url(./img/right_pic.png);
 }
 
 .pic_right {
-    /* height: 550px; */
     top: 50px;
     right: -100px;
     background-image: url(./img/left_pic.png);
@@ -126,16 +128,11 @@ header {
     opacity: .9;
 }
 
-.playfair_display {
-    font-family: "Playfair Display", serif;
-}
-
-
 .title {
     text-align: center;
     font-size: 81px;
     font-weight: 600;
-    margin: 150px 0 50px;
+    margin: 250px 0 50px;
 }
 
 .grid_pictures {
@@ -200,4 +197,197 @@ header {
     background-position: center;
     background-size: 100% 100%;
     background-repeat: no-repeat;
+}
+
+.testimonials {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.testimonials_text {
+    text-align: center;
+    font-size: 29px;
+    margin-bottom: 100px;
+}
+
+.testimonials_reviews {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    margin-bottom: 100px;
+}
+
+.review {
+    background-color: #fff00033;
+    display: flex;
+}
+
+.review_pic {
+    width: 45%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.review_top .review_pic {
+    background-image: url(./img/testimonials_top.png);
+}
+
+.review_right .review_pic {
+    background-image: url(./img/testimonials_right.png);
+}
+
+.review_bottom .review_pic {
+    background-image: url(./img/testimonials_bottom.png);
+}
+
+.review_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    background-color: #181818;
+    width: 55%;
+}
+
+.review_text h3 {
+    font-size: 40px;
+}
+
+.review_text p {
+    font-size: 15px;
+    width: 290px;
+    opacity: .8;
+}
+
+.review_text button {
+    all: unset;
+    cursor: pointer;
+    width: fit-content;
+    font-size: 16px;
+    background-image: url(./img/icons/arrow.svg);
+    background-position: right;
+    background-size: 20%;
+    background-repeat: no-repeat;
+    padding: 10px 40px 10px 0;
+    transition: .3s ease-in-out;
+}
+
+.review_text button:hover {
+    transform: scale(1.1);
+}
+
+.review_top,
+.review_bottom {
+    grid-column: 1/3;
+}
+
+.review_bottom {
+    flex-direction: row-reverse;
+}
+
+.review_right {
+    background: #fff;
+    flex-direction: column;
+    grid-column: 3/4;
+    grid-row: 1/3;
+}
+
+.review_right .review_text {
+    gap: 55px;
+}
+
+.review_right .review_text,
+.review_right .review_pic {
+    width: 100%;
+}
+
+#all_reviews {
+    all: unset;
+    cursor: pointer;
+    display: block;
+    margin: 0% auto;
+    font-size: 22px;
+    font-weight: 600;
+    border: 3px solid #fff;
+    padding: 20px;
+    border-radius: 3px;
+    transition: .3s ease-in-out;
+}
+
+#all_reviews:hover {
+    border-radius: 10px;
+}
+
+.contact {
+    margin-bottom: 300px;
+}
+
+form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: fit-content;
+}
+
+label {
+    border-bottom: 3px solid #fff;
+    padding-bottom: 10px;
+}
+
+label h3 {
+    cursor: pointer;
+    font-size: 44px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+form input,
+form textarea,
+form button {
+    all: unset;
+    width: 800px;
+    font-size: 25px;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+    opacity: .8;
+    color: #fff;
+}
+
+form textarea {
+    width: 800px !important;
+    height: 200px !important;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+}
+
+form button {
+    cursor: pointer;
+    padding: 10px 35px;
+    width: fit-content;
+    color: black;
+    background-color: #fff;
+    font-size: 38px;
+    font-weight: 600;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    opacity: .7;
 }
